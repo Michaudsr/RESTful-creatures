@@ -3,11 +3,14 @@ const app = express()
 // create an instance of layouts
 const ejsLayouts = require('express-ejs-layouts')
 const fs = require('fs') // will use to read json files
+const methodOverride = require('method-override')
 
 // tell express we're using ejs
 app.set('view engine', 'ejs')
 app.use(ejsLayouts) // tell express to let us use a layout template
 app.use(express.urlencoded({extended: false})) // body-parser middleware
+
+app.use(methodOverride('_method'));
 
 // home route
 app.get('/', (req, res)=>{

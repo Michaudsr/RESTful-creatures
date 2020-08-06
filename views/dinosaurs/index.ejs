@@ -9,8 +9,12 @@
 
 
 <ul>
-    <% myDinos.forEach((dino)=>{%>
+    <% myDinos.forEach((dino, index)=>{%>
         <li><%= dino.name %> is a <%= dino.type %></li>
+        <a href="/dinosaurs/edit/<%= index %>"></a>
+        <form method="POST" action="/dinosaurs/<%= index %>/?_method=DELETE">
+            <input type="submit" value="Delete">
+        </form>
     <% }) %>
 </ul>
 
