@@ -1,0 +1,25 @@
+{
+  "name": "restful-creatures",
+  "version": "1.0.0",
+  "description": "So far, we've only been rendering views, which is why we've been using GET for all of our routes. Now that we're working with data, we'll start to see how the other HTTP verbs come into play. Here we will focus on `GET` and `POST`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michaudsr/RESTful-creatures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michaudsr/RESTful-creatures/issues"
+  },
+  "homepage": "https://github.com/Michaudsr/RESTful-creatures#readme",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "layouts": "^3.0.2"
+  }
+}
